@@ -13,7 +13,8 @@ plt.rcParams["axes.titleweight"]="bold"
 
 
 #Load the datasize directly from source
-url = "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv"
+COMMIT_HASH = "67dd99e9d57aee5faf4b7d9e987b83c33041b90d"
+url = f"https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/{COMMIT_HASH}/data/constituents-financials.csv"
 df = pd.read_csv(url)
 
 
